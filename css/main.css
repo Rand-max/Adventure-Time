@@ -1,3 +1,6 @@
+/* 字體 */
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+/* 全域 */
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -280,6 +283,7 @@ nav{
 .aboutext{
     font-size: 50px;
     font-weight: bold;
+    font-family: 'Bungee';
 }
 .aboutpara{
     margin-top:20px;
@@ -302,6 +306,7 @@ nav{
 .storytext{
     font-size: 55px;
     font-weight: bold;
+    font-family: 'Bungee';
 }
 .storypara{
     margin-left: 5%;
@@ -470,6 +475,7 @@ nav{
 .elsesaying{
     font-size: 60px;
     font-weight: bold;
+    font-family: 'Bungee';
 }
 
 /* 美術 */
@@ -513,6 +519,7 @@ nav{
 .atnextear{
     font-weight: bold;
     font-size: 50px;
+    font-family: 'Bungee';
 }
 
 /* 尾列 */
