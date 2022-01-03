@@ -1,0 +1,938 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+body{
+    display:flex;
+    justify-content: center;
+    overflow-x: hidden;
+
+}
+
+section{
+	/* padding-bottom:720px; */
+}
+
+
+li:hover{
+    cursor:pointer;
+}
+a{
+    text-decoration: none;
+}
+p:hover{
+    cursor:default;
+}
+.atlogo{
+    height: 150px;
+}
+.nav{
+    position:fixed;
+    width:100%;
+    height:90px;
+    z-index: 1;
+    margin-left: 5%;
+}
+nav ul{
+    list-style: none;
+    font-size: 22px;
+    padding-top: 7px;
+}
+nav ul li {
+    display: inline;
+    margin-right:23px;
+    font-family:'Chewy';
+    cursor:pointer;
+}
+li a{
+    color:#FDF9F5;
+}
+li a:hover{
+    color:#ff8104;
+}
+
+@media screen and (max-width:1024px) {
+    nav ul{
+        list-style: none;
+        font-size: 18px;
+        padding-top: 7px;
+    }
+}
+.name{
+    font-family:Pompiere;
+    font-size: 23px;
+    color:#FDF9F5;
+    position:fixed;
+    margin-left: 450px;
+    padding-top:12px;
+
+}
+.name:hover{
+    cursor:pointer;
+}
+.bg{
+
+    background-image: url("../images/bg/iloveimg-resized/newbg1.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    
+}
+
+.bg2{
+    background-image:url("../images/bg/iloveimg-resized/bg2.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+.bg3{
+  
+    background-image:url("../images/bg/iloveimg-resized/newbg3.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+.bg4{
+
+    
+    background-image:url("../images/bg/iloveimg-resized/newbg4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.bg5{
+    background-image:url("../images/bg/iloveimg-resized/bg5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.bg6{
+    background-image:url("../images/bg/iloveimg-resized/bg6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.logo{
+    display: block;
+    position: absolute;
+    top: -32px;
+    left: 630px;
+    width: 140px;
+    height: 105px;
+}
+
+.navLine{
+    position:absolute;
+    text-align: center;
+    justify-content: center;
+    min-width:1000px;
+    min-height:1px;
+    margin-top: 400px;
+    margin-left: 130px;
+    background-color:#FDF9F5;
+    font-size: larger;
+}
+
+.mainpage{
+	position: relative;
+    background-image:url("../images/bg/iloveimg-resized/Characters.png");
+}
+
+.photo{
+    width: 100%;
+}
+
+.caption{
+
+    color: aliceblue;
+    font-family: 'Chewy';
+    font-size: 600%;
+    width: 60vw;
+    height: fit-content;
+    position: absolute;
+    top:40%;
+    left:35%;
+
+}
+
+.subtitle{
+
+    color: aliceblue;
+    font-family:  'Chewy';
+    width: 70vw;
+    height: fit-content;
+    font-size: 2rem;
+    position: relative;
+    top:70vh;
+    left:35vw;
+    
+
+}
+
+.h{
+    height: 0px;
+    border:0 none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    margin-bottom: 90px;
+    background-color: white;
+
+}
+
+
+.fin_btn{
+
+  display:inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  color:black ;
+  position: relative;
+  top: 4rem;
+  left:35rem;
+  z-index: 1;
+
+}
+
+.Fin_pos{
+  
+    width: 120px;
+    height: 90px;
+    display: inline-block;
+    position: relative;
+    top: 180px;
+    border: none;
+    background-color: transparent;
+  
+  
+}
+
+.btntxt{
+    color:white; 
+    font-size: 40px;
+}
+
+.btntxt:hover{
+    color:rgb(236, 162, 22); 
+
+}
+
+.Fin_pos:hover{
+  
+
+    color:black;
+  
+    
+  
+}
+
+.Jake_pos{
+  
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 90px;
+    top:300px;
+    border:none;
+    color:white;
+    background-color: transparent;
+ 
+  
+}
+
+.Jake_pos:hover{
+
+
+    color:black;
+}
+
+.Marceline_pos{
+
+    display: inline-block;
+    position: relative;
+    top: 120px;
+    width: 220px;
+    height: 120px;
+    border: none;
+    color:rgb(0, 0, 0);
+    background-color: transparent;
+   
+
+}
+
+.Marceline_pos:hover{
+    
+    color:black;
+    
+}
+
+.PrincessBonnibel_pos{
+
+    display: inline-block;
+    position: relative;
+    top: 430px;
+    width: 400px;
+    height: 80px;
+    border:none;
+    color:white;
+    background-color: transparent;
+
+}
+
+.PrincessBonnibel_pos:hover{
+
+
+    color:black;
+    
+
+}
+
+
+.LumpySpacePrincess_pos{
+
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    width: 450px;
+    height: 100px;
+    z-index: 1;
+    border:none;
+    color:white;
+    background-color: transparent;
+
+
+
+}
+
+.LumpySpacePrincess_pos:hover{
+
+ 
+    color:black;
+    
+
+}
+
+.BMO_pos{
+
+    display:inline-block;
+    position: relative;
+    top:400px;
+    width: 150px;
+    height: 60px;
+    background-color: transparent;
+    color:white ;
+    border:none;
+    z-index: 1;
+ 
+}
+
+.BMO_pos:hover{
+
+    color:black;
+ 
+}
+
+.TheLich_pos{
+
+    display: inline-block;
+    width: 220px;
+    height: 80px;
+    background-color:transparent;
+    position: relative;
+    top: 230px;
+    z-index: 1;
+    text-decoration: none;
+    border:none;
+    color:rgb(0, 0, 0);
+
+  
+
+}
+
+.TheLich_pos:hover{
+    
+    color:black;
+}
+
+
+
+.IceKing_pos{
+
+    display: inline-block;
+    width: 230px;
+    height: 80px;
+    position: relative;
+    top: 30em;
+    z-index: 1;
+    border:none;
+    color:rgb(0, 0, 0);
+    background-color: transparent;
+    
+
+
+}
+
+.IceKing_pos:hover{
+
+   
+    color:black;
+   
+}
+
+
+
+.PeppermintButler_pos{
+
+    display: inline-block;
+    width: 400px;
+    height: 80px;
+    position: relative;
+    top:330px;
+    z-index: 1;
+    border: none;
+    color:rgb(0, 0, 0);
+    background-color: transparent;
+  
+
+}
+
+.PeppermintButler_pos:hover{
+
+    color:black;
+
+}
+
+.flameprincess_pos{
+
+    display: inline-block;
+    width: 320px;
+    height: 80px;
+    position: relative;
+    z-index: 1;
+    top: 120px;
+    border: none;
+    color:rgb(0, 0, 0);
+    background-color: transparent;
+
+
+
+}
+
+.flameprincess_pos:hover{
+
+    color:black;
+
+
+}
+
+
+.LadyRainicorn_pos{
+
+    display: inline-block;
+    width: 360px;
+    height: 80px;
+    position: relative;
+    top: 200px;
+    z-index: 1;
+    border:none;
+    color:rgb(0, 0, 0);
+    background-color: transparent;
+
+
+}
+.LadyRainicorn_pos:hover{
+   
+    color:black;
+     
+}
+
+.Fern_pos{
+
+    display: inline-block;
+    width: 130px;
+    height: 60px;
+    position: relative;
+    top: 700px;
+    z-index: 1;
+  border: none;
+    color:rgb(0, 0, 0);
+    background-color: transparent;
+ 
+
+
+}
+
+.Fern_pos:hover{
+    border-color: black;
+    color:black;
+
+}
+
+
+.bg1{
+    display: block;
+    position: absolute;
+    top: 800px;
+    
+
+}
+
+.bg3{
+
+
+}
+
+.finintro{
+
+    display: inline-block;
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    
+
+     
+}
+/* other */
+.introblock{
+    position: fixed;
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    
+}
+.introblock0{
+    background-image: url(../images/bg/iloveimg-resized/F.png);
+}
+.introblock1{
+    background-image: url(../images/bg/iloveimg-resized/PB.png);
+}
+.introblock2{
+    background-image: url(../images/bg/iloveimg-resized/LSP.png);
+}
+.introblock3{
+    background-image: url(../images/bg/iloveimg-resized/IK.png);
+}
+.introblock4{
+    background-image: url(../images/bg/iloveimg-resized/FP.png);
+
+}
+.introblock5{
+    background-image: url(../images/bg/iloveimg-resized/Fer.png);  
+}
+
+.fintitle{
+
+
+    position: relative;
+    top: 40px;
+    left: 320px;
+    color: white;
+    font-family: 'Chewy';
+}
+
+.finintroword{
+
+    background-color: transparent;
+    color:black;
+    display: inline-block;
+    margin-top: 30px;
+    padding:2px;
+    width: 360px;
+    height: fit-content;
+    position: absolute;
+    top: 160px;
+    left: 640px;
+    padding: 12px;
+    margin: 10px;
+    font-size: 17px;
+    font-family: 'Chewy';
+
+}
+
+.back{
+
+  display: inline-block;
+  margin: 1px;
+  position: absolute;
+  top: 400px;
+  left: 800px;
+  border:solid black ;
+  border-radius: 10px;
+  padding: 3px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  color:white;
+  border-color: white;
+  background-color: transparent;
+  font-family: 'Chewy';
+
+}
+
+.back:hover{
+
+   
+    background-color: transparent;
+    color: black;
+    border-color: black;
+
+  
+  }
+
+  .jakeintro{
+
+
+    position: absolute;
+    top: 170px;
+    left: 220px;
+    width: 340px;
+    height: 360px;
+    
+  }
+  .jaketitle{
+
+    position: absolute;
+    top:80px;
+    left:370px;
+    color: white;
+    font-family: 'Chewy';
+  }
+
+  .jakeintroword{
+
+    background-color:transparent;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding:2px;
+    width: 350px;
+    height: fit-content;
+    position: absolute;
+    top: 100px;
+    left: 640px;
+    padding: 12px;
+    margin: 10px;
+    color:black;
+    font-size: 17px;
+    font-family: 'Chewy';
+    
+  }
+  .Princess_Bubblegum_intro{
+    position: absolute;
+    top: 150px;
+    left: 190px;
+    width:250px;
+    height: 420px;
+
+  }
+
+  .Princess_Bubblegum_title{
+
+    position: absolute;
+    top:50px;
+    left:180px;
+    color: white;
+    font-family: 'Chewy';
+
+  }
+
+  .Princess_Bubblegum_introword{
+
+    background-color: transparent;
+    color: black;
+    display: inline-block;
+    margin-top: 30px;
+    padding:2px;
+    width: 400px;
+    height: fit-content;
+    position: absolute;
+    top: 130px;
+    left: 620px;
+    padding: 12px;
+    margin: 10px;
+    font-size: 17px;
+    font-family: 'Chewy';
+
+  }
+
+  
+
+.Marceline_intro{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    width:450px;
+    height: 450px;
+}
+
+.Marceline_title{
+
+position: absolute;
+top:50px;
+left:240px;
+color: white;
+font-family: 'Chewy';
+}
+
+.Marceline_introword{
+
+    background-color: transparent;
+    color: black;
+    display: inline-block;
+    margin-top: 30px;
+    padding:2px;
+    width: 400px;
+    height: fit-content;
+    position: absolute;
+    top: 130px;
+    left: 620px;
+    padding: 12px;
+    margin: 10px;
+    font-size: 17px;
+    font-family: 'Chewy';
+
+
+}
+
+.black_btntxt{
+
+    color:black; 
+    font-size: 40px;
+}
+
+.black_btntxt:hover{
+    
+cursor: pointer;
+    color:rgb(253, 158, 4); 
+    font-size: 40px;
+}
+
+
+
+
+.LSPintro{
+    position: absolute;
+    top: 170px;
+    left: 220px;
+    width: 200px;
+    height: 270px;
+}
+
+.LSPtitle{
+
+    position: absolute;
+    top:70px;
+    left:160px;
+    color: white;
+    font-family: 'Chewy';
+}
+.LSPintroword{
+
+    background-color: transparent;
+    color: black;
+    display: inline-block;
+    margin-top: 50px;
+    padding:2px;
+    width: 350px;
+    height: fit-content;
+    position: absolute;
+    top: 180px;
+    left: 640px;
+    padding: 12px;
+    margin: 10px;
+    font-size: 17px;
+    font-family: 'Chewy';
+}
+.BMOintro{
+
+    position: absolute;
+    top: 200px;
+    left: 180px;
+    width: 430px;
+    height: 240px;
+}
+
+.BMOtitle{
+
+    position: absolute;
+    top:70px;
+    left:350px;
+    color: white;
+    font-family: 'Chewy';
+}
+
+.BMOintroword{
+
+    background-color: transparent;
+    color: BLACK;
+    display: inline-block;
+    margin-top: 30px;
+    width: 360px;
+    height: fit-content;
+    position: absolute;
+    top: 160px;
+    left: 630px;
+    padding: 12px;
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Chewy';
+
+}
+.Iceintro{
+
+    position: absolute;
+    top: 140px;
+    left: 260px;
+    width: 250px;
+    height: 360px;
+}
+
+.Icetitle{
+    position: absolute;
+    top:70px;
+    left:320px;
+    color: white;
+    font-family: 'Chewy';
+}
+
+.Iceintroword{
+    background-color: transparent;
+    color: black;
+    display: inline-block;
+    margin-top: 30px;
+    padding:2px;
+    width: 380px;
+    height: fit-content;
+    position: absolute;
+    top: 140px;
+    left: 620px;
+    padding: 12px;
+    margin: 10px;
+    font-size: 17px;
+    font-family: 'Chewy';
+
+
+}
+
+
+
+.ladyrainicornintro{
+    position: absolute;
+    top: 140px;
+    left: 160px;
+    width: 400px;
+    height: 360px;
+
+}
+
+.ladyrainicorntitle{
+    position: absolute;
+    top:70px;
+    left:240px;
+    color: white;
+    font-family: 'Chewy';
+
+
+}
+
+.Fernintro{
+
+    position: absolute;
+    top: 170px;
+    left: 300px;
+    width:220px;
+    height: 250px;
+
+}
+
+.ferntitle{
+    position: absolute;
+    top:70px;
+    left:380px;
+    color: white;
+    font-family: 'Chewy';
+
+
+}
+
+.scroll{
+
+    position: relative;
+    top: 50px;
+    left:400px;
+    width:840px;
+    height: 370px;
+}
+
+.finnscroll{
+    
+    position: relative;
+    top: 50px;
+    left:400px;
+    width:840px;
+    height: 300px;
+}
+.PBscroll{
+
+    position: relative;
+    top: 50px;
+    left:400px;
+    width:840px;
+    height: 270px;
+}
+
+.PBtitle{
+
+    position: relative;
+    top: 50px;
+    left:200px;
+    color:white;
+    font-family: 'Chewy';
+
+}
+
+.PBintroword{
+
+    background-color: transparent;
+    color: black;
+    display: inline-block;
+    margin-top: 30px;
+    padding:2px;
+    width: 380px;
+    position: absolute;
+    top: 140px;
+    left: 620px;
+    padding: 22px;
+    margin: 20px;
+    font-size: 17px;
+    font-family: 'Chewy';
+}
+
+.LSPscroll{
+    position: relative;
+    top: 110px;
+    left:400px;
+    width:840px;
+    height: 300px;
+}
+
+@font-face {
+    font-family: 'Chewy';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/chewy/v12/uK_94ruUb-k-wn52KjI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }

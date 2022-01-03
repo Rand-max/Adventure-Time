@@ -1,0 +1,366 @@
+/* 字體 */
+@import url(https://fonts.googleapis.com/css?family=Cherry+Swash);
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+
+/* 全域 */
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.container-fluid{
+    overflow: hidden;
+ }
+ section{
+     /* height: 100vh; */
+ }
+ /* 按鈕 */
+.btncontrol{
+    padding-top: 20px;
+    padding-left: 5%;
+}
+/* nav */
+.nav-item{
+    padding-top: 10px;
+    /* margin-top: 60%; */
+ }
+  .active{
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #76F3E4 !important;
+    border-radius: 50%;
+}
+.nav-link{
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #B391CE;
+    border-radius: 50%;
+}  
+	
+.nav-mine li{
+	position: relative;
+}
+.nav-mine li:hover::before {
+    position: absolute;
+    font-size: 10px;
+    /* padding: 4px; */
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+    /* right: 30px; */
+    bottom: -2px;
+    min-width: 110px;
+    text-align: center;
+    border-radius: 5px;
+  }
+nav{
+    width: 3%;
+    margin-left: 2%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    display: flex;
+    justify-content: center;;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    opacity: 70%;
+}
+@media screen and (max-width: 768px){
+    nav{
+        width: 0;
+    }
+}
+/* 主視覺 */
+.backcontrol{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    z-index: 99;
+}
+.backcontrol:hover{
+    opacity: 80%;
+}
+.backtomain{
+    height: 80px;
+    padding-top: 1%;
+    z-index: 99;
+}
+.btmtext{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Cherry Swash';
+}
+.mainimg{
+    position: relative;
+    /* width: 100vw; */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.bgcontrol{
+    position: absolute;
+    z-index: -5;
+    height: 100vh;
+    background-size: cover;
+    background-position: right;
+}
+.mainbg{
+    height: 100%;
+    width: 100vw;
+}
+.titlecontrol{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+.dltitle{
+    width: 700px;
+    padding-right: 5%;
+    padding-bottom: 10%;
+}
+@media screen and (max-width: 768px){
+    .titlecontrol{
+        position: absolute;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .dltitle{
+        width: 500px;
+    }
+}
+.treebranchcontrol{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+.treebranch{
+    width: 40%;
+}
+.frontgrasscontrol{
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    position: absolute;
+}
+/* 說明欄 */
+.hboarc{
+    /* height: 100vh; */
+    background-color: black;
+}
+.maxlogocontrol{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.maxlogo{
+    width: 80%;
+}
+.stream{
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.seplinecontrol{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sepline{
+    width: 1px;
+    height: 30%;
+    background-color: #fff;
+}
+.dlcontent{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.thedltitle{
+    margin-left: 5%;
+}
+.dltitletext{
+    font-size: 50px;
+    font-weight: bold;
+    color:#FFD88B;
+    font-family: 'Bungee';
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.dlpara{
+    margin-top:20px;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+.dldetailcontent{
+    font-size: 22px;
+    color: white;
+}
+.putbtnct{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+@media screen and (max-width: 768px){
+    .seplinecontrol{
+        height: 0;
+    }
+}
+/* 第一集 */
+.epcontrol{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.epcontent{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.eptitle{
+    margin-left: 5%;
+}
+.eptitletext{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Bungee';
+}
+.epara{
+    margin-top:20px;
+    width: 90%;
+    margin-left: 5%;
+}
+.detailcontent{
+    font-size: 22px;
+}
+.rightitlecontrol{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding-top: 10%;
+}
+.rightitle{
+    height: 40%;
+}
+.ep1{
+    background-image: url(../images/linearbmobg.jpg);  
+}
+/* 第二集 */
+.ep2{
+   background-image: url(../images/linearobsidian.jpg);
+}
+/* 第三集 */
+.ep3{
+    background-image: url(../images/linear\ Adventure-Time-Together-Again-featured.jpg);
+}
+.rightitle2{
+    height: 35%;
+}
+.eptitletext2{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Bungee';
+}
+/* 第四集 */
+.ep4{
+    background-image: url(../images/linear\ wizard\ city2.jpg);
+}
+.lefttitle{
+    height: 30%;
+}
+@media screen and (max-width: 768px){
+    .rightitlecontrol{
+        height: 0;
+        width: 0;
+    }
+}
+/* 尾列 */
+footer{
+    background-color: #656565;
+    /* height: 455px; */
+    width: 100vw;
+    margin-top: 0;
+    padding-top: 0;
+}
+.firstline{
+    padding-top: 5%;
+}
+.bigcncontrol{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.bigcnimg{
+    height: 72px;
+}
+.cncontentcontrol{
+    display: flex;
+    justify-content: center;
+}
+.cncontent{
+    font-size: 18px;
+    color: white;
+    padding-top: 10px;
+}
+.turnercontrol{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.turnerlogo{
+    height: 40px;
+}
+.cnlongcontrol{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.cnlonglogo{
+    height: 60px;
+}
+.lastlinectrl{
+    margin-top: 3%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.lastline{
+    font-size: 18px;
+    color: white;
+    width: 80%;
+}
+.bottom{
+    height: 50px;
+}

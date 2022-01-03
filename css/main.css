@@ -1,0 +1,579 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+section{
+    /* height: 100vh; */
+}
+.container-fluid{
+   overflow: hidden;
+}
+.no-gutter.row,
+.no-gutter.container,
+.no-gutter.container-fluid{
+margin-left: 0;
+margin-right: 0;
+padding-left: 0;
+padding-right: 0;
+}
+.no-gutter>[class^="col-"]{
+padding-left: 0;
+padding-right: 0;
+}
+
+/* 按鈕 */
+.btncontrol{
+    padding-top: 20px;
+    padding-left: 5%;
+}
+/* 導覽列 */
+nav{
+    /* width: 100%; */
+}
+.navbar{
+    height: 70px;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+.navbar-collapse{
+    width: 100vw;
+}
+
+.leftbar{
+    width: 80%;
+    display: flex;
+}
+.socialnav{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    padding-top: 1%;
+}
+.navcontrol{
+    display: flex;
+    width: 100vw;
+}
+
+.nav-item{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.nav-item:hover{
+    background-color: #fff;
+    border-radius: 2rem;
+}
+.nav-link{
+    font-weight: bold;
+    font-size: 20px;
+}
+.navbar-nav>li.nav-item>a.nav-link{
+    text-decoration:none;
+    color: black;
+}
+.navbar-nav>li.nav-item.active{
+    background-color: #fff;
+    border-radius: 2rem;
+}
+.navbar-nav>li.nav-item.active>a.nav-link{
+    text-decoration:none;
+    color: #B08023;
+}
+
+
+/* 社群 */
+.socialnav{
+    display: flex;
+    flex-direction: row;
+}
+.fb{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.face{
+    height: 30px;
+    width: 30px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.face:hover{
+    opacity: .5;
+}
+.twitter{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.twt{
+    height: 30px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.twt:hover{
+    opacity: .5;
+}
+.ig{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.inster{
+     height: 30px;
+     width: 30px;
+     opacity: 1;
+     display: block;
+     transition: .5s ease;
+     backface-visibility: hidden;
+}
+.inster:hover{
+    opacity: .5;
+}
+
+/* nav rwd */
+@media screen and (max-width: 768px){
+    .navbar{
+        height: 70px;
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 999;
+    }
+    .leftbar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+    }
+    .socialnav{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 1%;
+    }
+    .nav-item{
+        width: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+    .nav-link{
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .rwdcol{
+        flex-direction: column;
+    }
+}
+
+/* 主視覺 */
+.mainbg{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.bgcontrol{
+    position: absolute;
+    z-index: -5;
+    height: 100vh;
+    background-size: cover;
+}
+.realbg{
+    height: 100%;
+    width: 100vw; 
+}
+.titlecontrol{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding-left: 3%;
+    position: absolute;
+    z-index: 1;
+}
+.atitle{
+    width: 800px;
+    position: absolute;
+}
+.fjcontrol{
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    justify-content: flex-end;
+    padding-right: 10%;
+    align-items: center;
+    z-index: 3;
+}
+.mainfj{
+    width: 429px;
+    height: 315px;
+    position: absolute;
+}
+.treehouse{
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+}
+.houseimg{
+    position: absolute;
+    width: 100%;
+}
+
+
+/* 關於 */
+.finncontrol{
+    height: 100vh;
+    width: 50vw;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.popfinn{
+    height: 60%;
+}
+.popjake{
+    height: 50%;
+}
+
+.rightcontent{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.about{
+    background-color: #99D6EA;
+    height: 100%;
+    width: 100vw;
+}
+.abouttitle{
+    margin-left: 5%;
+}
+.aboutext{
+    font-size: 50px;
+    font-weight: bold;
+}
+.aboutpara{
+    margin-top:20px;
+    width: 90%;
+    margin-left: 5%;
+}
+.aboutcontent{
+    font-size: 22px;
+}
+/* 背景故事 */
+.backstory{
+    background-color: #FBD676;
+    height: 100%;
+    width: 100vw;
+}
+.storytitle{
+    margin-left: 5%;
+    /* margin-top: 15%; */
+}
+.storytext{
+    font-size: 55px;
+    font-weight: bold;
+}
+.storypara{
+    margin-left: 5%;
+    margin-top: 20px;
+    width: 90%;
+}
+
+/* 其他 */
+.else{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.to_chara{
+    background-color: #F890A3;
+    height: 100vh;
+}
+.bubblecontrol{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+}
+.bubblegum{
+    width: 50%;
+}
+.to_sword{
+    background-color: #F98C4F;
+    height: 100vh;
+}
+.to_distant{
+    background-color: #4D7777;
+    height: 100vh;
+}
+.other{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    z-index: 6;
+    margin-top: 8%;
+}
+.panel {
+    height: 250px; width: 250px; 
+    float: left;
+    position: absolute;
+    top: 60%; left: 50%;
+    margin: -125px 0 0 -125px;
+    -webkit-perspective: 1000px;
+       -moz-perspective: 1000px;
+      perspective: 1000px;
+}
+.circle {
+    border-radius: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+
+.bubbleimg{
+    background-image: url(../images/bubblegumportrait.png);
+    background-size: 250px;
+    z-index: 9;
+}
+.flameimg{
+    background-image: url(../images/flameportrait.png);
+    background-size: 250px;
+    z-index: 9;
+}
+.marimg{
+    background-image: url(../images/marportrait.png);
+    background-size: 250px;
+    z-index: 9;
+}
+.front {
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+       -moz-transform: rotateX(0deg) rotateY(0deg);
+      transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    
+    -webkit-backface-visibility: hidden;			
+       -moz-backface-visibility: hidden;
+      backface-visibility: hidden;
+
+    -webkit-transition: all .9s ease-in-out;
+       -moz-transition: all .9s ease-in-out;
+        -ms-transition: all .9s ease-in-out;
+         -o-transition: all .9s ease-in-out;			
+            transition: all .9s ease-in-out;
+}
+
+.charaimg{
+    background-image: url(../images/characters.png);
+    background-size: 250px;
+    z-index: 8;
+}
+.swordimg{
+    background-image: url(../images/swords.png);
+    background-size: 250px;
+    z-index: 8;
+}
+.distantimg{
+    background-image: url(../images/distant.png);
+    background-size: 250px;
+    z-index: 8;
+}
+.back {
+    -webkit-transform: rotateY(-180deg);
+       -moz-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+
+    -webkit-backface-visibility: hidden;			
+       -moz-backface-visibility: hidden;
+      backface-visibility: hidden;
+
+    -webkit-transition: all .9s ease-in-out;
+       -moz-transition: all .9s ease-in-out;
+        -ms-transition: all .9s ease-in-out;
+         -o-transition: all .9s ease-in-out;			
+            transition: all .9s ease-in-out;
+}
+
+.panel.flip .front {
+    z-index: 10;
+    border-color: #eee;
+
+    -webkit-transform: rotateY(180deg);
+       -moz-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+    
+    -webkit-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+       -moz-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+}
+
+.panel.flip .back {
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+       -moz-transform: rotateX(0deg) rotateY(0deg);
+      transform: rotateX(0deg) rotateY(0deg);
+
+
+    -webkit-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+       -moz-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+}
+.panel.flip .charaimg{
+    z-index: 11;
+    background-image: url(../images/characters.png);
+}
+.panel.flip .swordimg{
+    z-index: 11;
+    background-image: url(../images/swords.png);
+}
+.panel.flip .distantimg{
+    z-index: 11;
+    background-image: url(../images/distant.png);
+}
+.elsesaying{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+/* 美術 */
+.coa{
+    background-image: url(../images/mountainbg.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    z-index: -5;
+}
+
+/* 寶妹 */
+.waitspace{
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+.fiona{
+    background-image: url(../images/Adventure-Time-Fionna-and-Cake-e1629220871778.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.whitebg{
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation-fill-mode: forwards;
+}
+.atnextear{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/* 尾列 */
+footer{
+    background-color: #656565;
+    /* height: 455px; */
+    width: 100vw;
+    margin-top: 0;
+    padding-top: 0;
+}
+.footercontrol{
+
+}
+.firstline{
+    padding-top: 5%;
+}
+.bigcncontrol{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.bigcnimg{
+    height: 72px;
+}
+.cncontentcontrol{
+    display: flex;
+    justify-content: center;
+}
+.cncontent{
+    font-size: 18px;
+    color: white;
+    padding-top: 10px;
+}
+.turnercontrol{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.turnerlogo{
+    height: 40px;
+}
+.cnlongcontrol{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.cnlonglogo{
+    height: 60px;
+}
+.lastlinectrl{
+    margin-top: 3%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.lastline{
+    font-size: 18px;
+    color: white;
+    width: 80%;
+}
+.bottom{
+    height: 50px;
+}
