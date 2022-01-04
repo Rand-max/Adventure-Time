@@ -936,3 +936,67 @@ cursor: pointer;
     src: url(https://fonts.gstatic.com/s/chewy/v12/uK_94ruUb-k-wn52KjI.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
+
+  /* 尾列 */
+footer{
+    background-color: #656565;
+    /* height: 455px; */
+    width: 100vw;
+    margin-top: 0;
+    padding-top: 0;
+}
+.footercontrol{
+
+}
+.firstline{
+    padding-top: 5%;
+}
+.bigcncontrol{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.bigcnimg{
+    height: 72px;
+}
+.cncontentcontrol{
+    display: flex;
+    justify-content: center;
+}
+.cncontent{
+    font-size: 18px;
+    color: white;
+    padding-top: 10px;
+}
+.turnercontrol{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.turnerlogo{
+    height: 40px;
+}
+.cnlongcontrol{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.cnlonglogo{
+    height: 60px;
+}
+.lastlinectrl{
+    margin-top: 3%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5%;
+}
+.lastline{
+    font-size: 18px;
+    color: white;
+    width: 80%;
+}
+.bottom{
+    height: 50px;
+}
